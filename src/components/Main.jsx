@@ -3,6 +3,7 @@ import {useState} from "react"
 import {nanoid} from "nanoid"
 
 export default function(){
+    const [dice, setDice] = useState(generateAllNewDice());
 
     function generateAllNewDice() {        
         // const newDice = [];
@@ -22,18 +23,27 @@ export default function(){
     }
 
     function rollDice(){
-        setDice(generateAllNewDice());
+        setDice(prevData => prevData.map(die => die.isHeld ? die : {...die,
+            value: Math.ceil(Math.random() * 6),
+        }));
     }
 
-    const [dice, setDice] = useState(generateAllNewDice());
+    function hold(id){
+        setDice(oldData => oldData.map(die => die.id === id ? {...die, isHeld: !die.isHeld} : die));
+    }
+
     const diceElements = dice.map(dieObj => 
         <Die 
-            key={dieObj.id} 
+            key={dieObj.id}
             value={dieObj.value} 
-            isHeld={dieObj.isHeld} />);
+            isHeld={dieObj.isHeld}
+            holdFunc={() => hold(dieObj.id)}
+        />);
 
     return (
         <main>
+            <h1 className="title">Tenzies</h1>
+            <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
             <div className="dice-container">
                 {diceElements}
             </div>

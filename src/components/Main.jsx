@@ -1,18 +1,11 @@
-import Die from "./Die"
 import { useState, useRef, useEffect } from "react"
 import { nanoid } from "nanoid"
 import { useWindowSize } from 'react-use'
 import Confetti from 'react-confetti'
 
-export default function () {
-    const { width, height } = useWindowSize()
-    const rollButtonRef = useRef(null);
+import Die from "./Die"
 
-    // While initializing the state, if direct a function is called, it'll execute the function every time the component re-renders
-    // To avoid that, we can pass a arrow function that will return the desired value once and will keep the direct values for later
-    const [dice, setDice] = useState(() => generateAllNewDice());
-
-    function generateAllNewDice() {
+function generateAllNewDice() {
         // const newDice = [];
         // for(let i = 0; i < 10; i++){
         //     const obj = {
@@ -30,8 +23,17 @@ export default function () {
         }));
     }
 
+
+export default function () {
+    const { width, height } = useWindowSize()
+    const rollButtonRef = useRef(null);
+
+    // While initializing the state, if direct a function is called, it'll execute the function every time the component re-renders
+    // To avoid that, we can pass a arrow function that will return the desired value once and will keep the direct values for later
+    const [dice, setDice] = useState(() => generateAllNewDice());
+
     // Whereas array.map returns the direct value, array.every returns a boolean
-    let gameWon = dice.every(die => die.isHeld) && dice.every(die => die.value === dice[0].value);
+    const gameWon = dice.every(die => die.isHeld) && dice.every(die => die.value === dice[0].value);
 
     function rollDice() {
         if (gameWon) {

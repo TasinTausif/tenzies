@@ -38,7 +38,6 @@ export default function () {
     function rollDice() {
         if (gameWon) {
             setDice(() => generateAllNewDice());
-            gameWon = false;
         } else {
             setDice(prevData => prevData.map(die => die.isHeld ? die : {
                 ...die,

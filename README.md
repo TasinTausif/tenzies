@@ -1,18 +1,61 @@
-# React + Vite
+# 🎲 Tenzies Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tenzies** is a fast-paced web game built with **React + Vite** where your goal is to roll dice until all dice show the same value — all while trying to be strategic with which dice to hold.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🎯 Roll ten dice and try to make them all show the same number  
+- 🛑 Hold dice you want to keep before rolling again  
+- ⏱️ A timer or roll-counter to track your performance (if implemented)  
+- 🧠 Simple and fun logic that’s easy to play, hard to master  
+- 🖥️ Responsive UI built with React & Vite  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Category      | Technologies |
+|--------------|-------------|
+| Frontend      | React, Vite |
+| Styling       | (Tailwind CSS or plain CSS — adjust if needed) |
+| Game Logic    | JavaScript (React Hooks to control state) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📋 Getting Started
+
+### Prerequisites  
+- Node.js (v14 + recommended)  
+- npm or yarn
+
+### Installation  
+1. Clone the repo  
+     ```bash
+     git clone https://github.com/TasinTausif/tenzies.git
+     cd tenzies
+
+2. Install dependencies
+
+    ```bash
+    npm install
+
+3. Run the development server
+    ```bash
+    npm run dev
+
+Open in your browser
+  Visit: http://localhost:5173
+
+### 🎮 How to Play
+
+  On the game screen, you’ll see ten dice with random numbers.
+  
+  Click on any dice you want to “hold” — those won’t roll again.
+  
+  Click the Roll button to roll the remaining dice.
+  
+  Repeat until all ten dice show the SAME number.
+  
+  When you win, you’ll see a finish screen with confetti and a restart button.

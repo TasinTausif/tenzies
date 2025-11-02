@@ -8,7 +8,6 @@
 
 - 🎯 Roll ten dice and try to make them all show the same number  
 - 🛑 Hold dice you want to keep before rolling again  
-- ⏱️ A timer or roll-counter to track your performance (if implemented)  
 - 🧠 Simple and fun logic that’s easy to play, hard to master  
 - 🖥️ Responsive UI built with React & Vite  
 

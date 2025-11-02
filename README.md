@@ -28,7 +28,7 @@
 
 ### Prerequisites  
 - Node.js (v14 + recommended)  
-- npm or yarn
+- npm
 
 ### Installation  
 1. Clone the repo  

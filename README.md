@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - 🎯 Roll ten dice and try to make them all show the same number  
-- 🛑 Hold dice you want to keep before rolling again  
+- 🛑 Hold the dice you want to keep before rolling again  
 - 🧠 Simple and fun logic that’s easy to play, hard to master  
 - 🖥️ Responsive UI built with React & Vite  
 
@@ -18,7 +18,7 @@
 | Category      | Technologies |
 |--------------|-------------|
 | Frontend      | React, Vite |
-| Styling       | (Tailwind CSS or plain CSS — adjust if needed) |
+| Styling       | Plain CSS |
 | Game Logic    | JavaScript (React Hooks to control state) |
 
 ---

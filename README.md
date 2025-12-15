@@ -4,6 +4,13 @@
 
 ---
 
+## 🌐 Live Demo
+
+🚀 **Play the game here:**  
+👉 https://tenzies-six-fawn.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - 🎯 Roll ten dice and try to make them all show the same number  
@@ -33,6 +40,7 @@
 | Frontend      | React, Vite |
 | Styling       | Plain CSS |
 | Game Logic    | JavaScript (React Hooks to control state) |
+| Hosting   | Vercel |
 
 ---
 

@@ -13,6 +13,19 @@
 
 ---
 
+## 📸 Screenshots
+
+### New Game
+<img src="./screenshots/newgame.png" alt="New Game" />
+
+### Playing
+<img src="./screenshots/playing.png" alt="Playing" />
+
+### Game Won
+<img src="./screenshots/gamewon.png" alt="Game Won" />
+
+---
+
 ## 🛠️ Tech Stack
 
 | Category      | Technologies |
